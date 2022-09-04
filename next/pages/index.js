@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navigation from '../components/navigation/Navigation'
+import Header from '../components/Header/Header';
 import { GlobalStyles } from '../components/GlobalStyles/GlobalStyles';
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
 
       <GlobalStyles />
       <Navigation />
+      <Header />
     </div>
   )
 }
