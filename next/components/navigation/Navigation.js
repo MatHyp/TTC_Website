@@ -6,6 +6,7 @@ import NavigationList from './NavigationList'
 const Navigation = () => {
     return <>
         <NavTopBarStyles />
+
         <NavMainBarStyled>
             <NavigationList />
         </NavMainBarStyled>
