@@ -5,7 +5,7 @@ const Header = () => {
     return (
        
     <HeaderStyles>
-        <img src='/images/tlo.png' />
+        <img src='/images/main.png' />
         <p>Praktyki zagraniczne</p>
     
         <DownHeaderStyles>

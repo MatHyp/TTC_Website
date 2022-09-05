@@ -5,10 +5,10 @@ export const DropDownMenuStyling = styled.div`
     left: -2px;    
     
     ul{
-        background-color: #fff;     
+        background-color: #a5da15;     
         display: flex;
         flex-direction: column;
-        width: 200px;
+        width: 240px;
         border-radius: 0 0 25px 25px;
         box-shadow: 0 2px 15px 0 rgba(0,0,0, .1);
         opacity: 0;
@@ -23,9 +23,14 @@ export const DropDownMenuStyling = styled.div`
     }
     
     li{
+        padding: 14px 20px;
         a{
-            font-size: 16px;
+            color: white;
+            font-size: 18px;
         }
+    }
+    li:hover{
+        background-color:#323232;
     }
     @media (max-width: 1000px){
         position: relative;

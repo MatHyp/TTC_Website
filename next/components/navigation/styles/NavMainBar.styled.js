@@ -6,6 +6,7 @@ export const NavMainBarStyled = styled.nav`
     max-width: 100%;
     height: 100px;
     background-color: #EEEEEE;
+    /* background-color: #323232; */
     position: relative;
     
     img{

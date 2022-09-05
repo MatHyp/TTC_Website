@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderStyles = styled.header`
-    width: 100vw;
+    /* width: 100vw; */
     height: calc(80vh -  138px);
     /* background-image: url('/images/pracownia1.jpg');     */
     background-repeat: no-repeat;
@@ -10,9 +10,9 @@ export const HeaderStyles = styled.header`
     z-index: -1;
     img{
         object-fit: cover;
-        filter: brightness(50%);
+        filter: brightness(80%);
         width: 100%;
-        height: 100%;
+        height: 90%;
       
     }
     p{
@@ -25,5 +25,22 @@ export const HeaderStyles = styled.header`
         border: 4px solid white;
         color: white;
         padding: 2% 6%;
+    }
+
+    @media (max-width: 1400px){
+        p{
+            font-size: 40px;
+        }
+        img{
+        
+            height: 80%;
+        }
+    }
+    @media (max-width: 1100px){
+        p{
+            font-size: 30px;
+            /* padding: 5% 10%; */
+        
+        }
     }
 `
