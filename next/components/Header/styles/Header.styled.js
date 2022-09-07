@@ -1,44 +1,49 @@
 import styled from "styled-components";
 
 export const HeaderStyles = styled.header`
-    /* width: 100vw; */
-    height: calc(80vh -  138px);
-    /* background-image: url('/images/pracownia1.jpg');     */
-    background-repeat: no-repeat;
-    background-size: cover;
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap');
+    height: 60vh;
     position: relative;
-    z-index: -1;
+
+
     img{
+        z-index: -1;
         object-fit: cover;
         filter: brightness(80%);
         width: 100%;
-        height: 90%;
-      
-    }
-    p{
-        text-align: center;
+        height: 100%;
         position: absolute;
+        
+    }
+
+    .header-description{
+        position: absolute;
+        left: 15%;
         top: 50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-        font-size: 49px;
-        border: 4px solid white;
+        transform: translateY(-50%);
+    }
+
+    p{
+        font-size: 86px;
+        font-family: 'rajdhani', sans-serif;
+        font-weight: 700;
+        font-style: normal;
         color: white;
-        padding: 2% 6%;
+    }
+    .green p{
+        color: #A5DA15;
     }
 
     @media (max-width: 1400px){
+    height: 50vh;
         p{
-            font-size: 40px;
+            /* font-size: 40px; */
         }
-        img{
-        
-            height: 80%;
-        }
+    
     }
     @media (max-width: 1100px){
         p{
-            font-size: 30px;
+            /* font-size: 30px; */
             /* padding: 5% 10%; */
         
         }

@@ -1,18 +1,18 @@
 import { HeaderStyles } from "./styles/Header.styled"
-import { DownHeaderStyles } from "./styles/DownHeader.styled"
 const Header = () => {
 
     return (
        
     <HeaderStyles>
-        <img src='/images/main.png' />
-        <p>Praktyki zagraniczne</p>
-    
-        <DownHeaderStyles>
-            <h2>Witaj na strone</h2>
-            <h1>Technikum Technologii Cyfrowych</h1>
-            <div></div>
-        </DownHeaderStyles>
+        <img src='/images/test.png' />
+       
+        <div className="header-description">
+            <p>pasja</p>
+            <span className="green">
+                <p>innowacje</p>
+            </span>
+            <p>rozwój</p>
+        </div>
     </HeaderStyles>
     )
 }

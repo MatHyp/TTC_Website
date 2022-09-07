@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Navigation from '../components/navigation/Navigation'
 import Header from '../components/Header/Header';
+import MainAbout from '../components/AboutSchoolSeaction/MainAbout';
+import DownHeader from '../components/Header/DownHeader';
 import { GlobalStyles } from '../components/GlobalStyles/GlobalStyles';
 
 export default function Home() {
@@ -13,11 +15,14 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"></link>
+        <link rel="stylesheet" href="https://use.typekit.net/ihh2vbs.css"></link>
       </Head>
 
       <GlobalStyles />
       <Navigation />
       <Header />
+      <DownHeader />
+      <MainAbout />
     </div>
   )
 }

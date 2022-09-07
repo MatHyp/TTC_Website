@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const DownHeaderStyles = styled.div`
-    /* margin: 0; */
-    /* width: 100vw; */
+    display: flex;
+
     height: calc(26vh);
     text-align: center;
     background-color: #EEEEEE;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     h2{

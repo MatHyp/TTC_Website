@@ -1,8 +1,12 @@
+import {MainAboutStyles} from './styles/MainAbout.styled'
+import AboutDescription from './AboutDescription'
+
 const MainAbout = () => {
     return (       
-    <HeaderStyles>
-        <img src='/images/main.png' />
-    </HeaderStyles>
+    <MainAboutStyles>
+        <img src='/images/ttc.png' />
+        <AboutDescription />
+    </MainAboutStyles>
     )
 }
 
