@@ -13,13 +13,14 @@ export const NavListUlStyles = styled.ul`
     li{
         position: relative;
         list-style: none;
+
     }
     
     a{
-        font-family: 'Mulish', sans-serif;
+        font-family: 'rajdhani', sans-serif;
         color: black;
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 24px;
+        font-weight: 700;
         text-decoration: none;
     }
     

@@ -13,7 +13,10 @@ const AboutDescription = () => {
             Warszawie. Naukę rozpoczyna wówczas 146 uczniów w 2 oddziałach 
             gimnazjum i 1 oddziale liceum.</p>
         
-        <button></button>
+        <div className="btn-container">
+            <button>Wiecej Informacji</button>
+            <div className="border"></div>
+        </div>
     </AboutDescriptionStyling>
     )
 }

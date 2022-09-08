@@ -5,9 +5,31 @@ export const MainAboutStyles = styled.section`
 
     display: flex;
     margin: 10vh auto;
-    /* height: 40vh; */
     img{
-        width: 30vw;
+        width: 50%;
+        height: 30%;
         filter: brightness(60%);
+    }
+    @media (max-width: 1400px){
+        width: 90vw;
+
+        img{
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 1200px){
+        img{
+            width: 55%;
+        }}
+
+    @media (max-width: 1000px){
+        flex-direction: column;
+        align-items: center;
+        
+        img{
+            width: 80%;
+            margin-bottom: 5vh;
+        }
     }
 `
