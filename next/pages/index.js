@@ -4,7 +4,6 @@ import Header from '../components/Header/Header';
 import MainAbout from '../components/AboutSchoolSeaction/MainAbout';
 import DownHeader from '../components/Header/DownHeader';
 import EventsList from '../components/Events/EventsList'
-
 import { GlobalStyles } from '../components/GlobalStyles/GlobalStyles';
 
 export default function Home() {
@@ -26,6 +25,7 @@ export default function Home() {
       <DownHeader />
       <MainAbout />
       <EventsList />
+      
     </div>
   )
 }

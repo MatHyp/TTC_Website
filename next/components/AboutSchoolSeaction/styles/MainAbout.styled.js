@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MainAboutStyles = styled.section`
     width: 70vw;
-
+    
     display: flex;
     margin: 10vh auto;
     img{

@@ -17,15 +17,15 @@ export const NavListUlStyles = styled.ul`
     }
     
     a{
-        font-family: 'rajdhani', sans-serif;
+        font-family: 'Mulish', sans-serif;
         color: black;
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 700;
         text-decoration: none;
     }
     
 
-    @media (max-width: 1400px){
+    @media (max-width: 1600px){
         margin-left: 30%;
  
         a{

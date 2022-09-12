@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const AboutDescriptionStyling = styled.div`
     width: 40vw;
     padding: 5% 0px 0px 60px;
+    
     p{
         font-family: 'poppins';
         font-size: 22px;

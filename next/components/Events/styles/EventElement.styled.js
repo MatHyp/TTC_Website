@@ -1,26 +1,44 @@
 import styled from "styled-components";
 
 export const EventElementStyling = styled.div`
-    width: 40%;
+    width: 30%;
+    margin-bottom: 50px;
     .data{
+        font-family: 'Mullish';
         font-size: 14px;
-        padding: 10px 0 0 0;
-        font-weight: 300;
+        padding-top: 10px;
+        font-weight: 100;
+        color: #a5da15;
     }
 
     .event-title{
-        font-size: 23px;
-        color: #8FB73E;
-        text-transform: uppercase;
-        font-weight: 700;
-        padding: 10px 0;
-        
+        font-family: 'rajdhani', sans-serif;
+        font-size: 40px;
+        color: #FFFFFF;
+        font-weight: 900;
+        padding-top: 40px;
+        padding-bottom: 20px;
     }
+    
     img{
+        padding-bottom: 20px;
         width: 100%;
+        object-fit: contain;
+        border-radius: 10px;
     }
     .description{
-        padding: 00px 0 20px 0;
-        /* width: 80% */
+        font-family: 'Mullish';
+        font-size: 20px;
+        color: #c8c8c8;
+        font-weight: 100;
     }
+
+    .read-more{
+        font-family: 'Mullish';
+        
+        font-size: 20px;
+        color: #a5da15;
+        font-weight: 100;
+    }
+
 `
