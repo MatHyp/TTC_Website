@@ -34,6 +34,25 @@ export const HeaderStyles = styled.header`
         color: #A5DA15;
     }
 
+
+    .dot{
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        padding: 0 10px;
+        background-color: white;
+    }
+
+    .dots{
+        position: absolute;
+        display: flex;
+        width: 80px;
+        justify-content: space-around;
+        left: 50%;
+        top: 96%;
+        transform: translate(-50%,-100%);
+
+    }
     @media (max-width: 1400px){
     height: 50vh;
         p{
@@ -41,11 +60,14 @@ export const HeaderStyles = styled.header`
         }
     
     }
-    @media (max-width: 1100px){
+
+    @media (max-width: 1300px){
         p{
-            /* font-size: 30px; */
-            /* padding: 5% 10%; */
-        
+            font-size: 60px;
         }
     }
-`
+    @media (max-width: 1100px){
+        p{
+            /* text-align: center; */
+        }
+    }`
