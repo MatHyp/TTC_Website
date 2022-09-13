@@ -8,13 +8,14 @@ const EventList = () => {
             <div className="bgc"></div>
             <div className="bgc-2"></div>
             <EventsListStyling>
-                <EventElement img='images/news1.png'/>
-                <EventElement img='images/news4.png'/>
-                <EventElement img='images/news2.png'/>
-                <EventElement img='images/news3.png'/>
-                <EventElement img='images/news3.png'/>
-                <EventElement img='images/news3.png'/>
+                <EventElement img='images/news1.png' />
+                <EventElement img='images/news4.png' />
+                <EventElement img='images/news2.png' />
+                <EventElement img='images/news3.png' />
+                <EventElement img='images/news3.png' />
+                <EventElement img='images/news3.png' />
             </EventsListStyling>
+            <button className="btn-all">Zobacz wszystkie artykuly</button>
         </EventsStyling>
     )
 }

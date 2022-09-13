@@ -29,5 +29,39 @@ export const EventsStyling = styled.div`
         background-color: grey;
     }
 
+    @media (max-width: 1400px){
+        .title{
+            top:5%;
+            left: 8%;
+        }
+    }
+
+    @media (max-width: 770px) {
+        .title{
+            font-size: 40px;
+            top: 4%;
+            left: 9%;
+        }
+    };
+
+    .btn-all{
+        position: relative;
+        font-family: 'rajdhani', sans-serif;
+        font-size: 20px;
+        padding: 20px 30px;
+        background-color: #a5da15;
+        border: none;
+        color: #323232;
+        font-weight: 900;
+        left: 50%;
+        transform: translate(-50%);
+        margin-bottom: 40px;
+    }
+
+    /* @media (max-width: 600px) {
+        margin-top: 15%;
+        width:70vw ;
+    }; */
+
 
 `

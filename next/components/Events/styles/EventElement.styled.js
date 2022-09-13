@@ -35,10 +35,23 @@ export const EventElementStyling = styled.div`
 
     .read-more{
         font-family: 'Mullish';
-        
         font-size: 20px;
         color: #a5da15;
         font-weight: 100;
     }
 
+    @media (max-width: 1400px) {
+        margin-top: 6%;
+        width  :40vw ;
+    };
+
+    @media (max-width: 770px) {
+        margin-top: 15%;
+        width:80vw ;
+    };
+
+    @media (max-width: 600px) {
+        
+        width:75vw ;
+    };
 `
