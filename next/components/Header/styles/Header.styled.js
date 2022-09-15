@@ -13,7 +13,7 @@ export const HeaderStyles = styled.header`
         width: 100%;
         height: 100%;
         position: absolute;
-        
+        transition: 1s ease;
     }
 
     .header-description{
@@ -70,4 +70,9 @@ export const HeaderStyles = styled.header`
         p{
             /* text-align: center; */
         }
-    }`
+    }
+    
+    .slider{
+        height: 100%;
+    }
+    `

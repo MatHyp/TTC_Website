@@ -6,6 +6,7 @@ import DownHeader from '../components/Header/DownHeader';
 import EventsList from '../components/Events/EventsList'
 import Footer from '../components/Footer/Footer';
 import { GlobalStyles } from '../components/GlobalStyles/GlobalStyles';
+import MainFooter from '../components/Footer/MainFooter';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <MainAbout />
       <EventsList />
       <Footer />
+      <MainFooter />
     </div>
   )
 }

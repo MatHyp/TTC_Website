@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 export const DropDownMenuStyling = styled.div`
     position: absolute;
-    left: -2px;    
+    left: 0px;    
+    z-index: 10;
+   
+
     
     ul{
         background-color: #a5da15;     
@@ -11,13 +14,12 @@ export const DropDownMenuStyling = styled.div`
         width: 240px;
         border-radius: 0 0 25px 25px;
         box-shadow: 0 2px 15px 0 rgba(0,0,0, .1);
-        opacity: 0;
-        transform: translateY(-10px);
-        transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+        /* transition: opacity 150ms ease-in-out, transform 150ms ease-in-out; */
+        transition: 1s ease;
     }
     
     ul:hover{
-        opacity: 1;
+        /* opacity: 1; */
         transform: translateY(0);
         pointer-events: auto;
     }

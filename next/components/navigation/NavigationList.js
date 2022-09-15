@@ -7,6 +7,8 @@ import { useState } from 'react'
 const NavigationList = () => {
     const [open, setOpen] = useState(false)
 
+
+    
     return (
         <>
             <img src='/images/logo_ttc.png' alt='Logo technikum technologii cyfrowych' />

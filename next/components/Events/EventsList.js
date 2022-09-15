@@ -16,6 +16,7 @@ const EventList = () => {
                 <EventElement img='images/news3.png' />
             </EventsListStyling>
             <button className="btn-all">Zobacz wszystkie artykuly</button>
+
         </EventsStyling>
     )
 }

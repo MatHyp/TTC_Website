@@ -9,11 +9,12 @@ export const NavListUlStyles = styled.ul`
     width: 60%;
     
     
-    transition: all 0.3s ease;
     li{
         position: relative;
         list-style: none;
-
+        /* background-color: #a5da15;      */
+        padding: 10px;
+        transition: 0.3s ease;
     }
     
     a{

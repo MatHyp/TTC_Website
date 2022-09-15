@@ -5,10 +5,12 @@ import { useState } from 'react';
 import DropDownMenu from './DropDownMenu'
 
 const NavItemLi = ({ name }) => {
-
-    return <li>
-        <Link href='/'>{name}</Link>
-        <DropDownMenu />
+    const [show, setShow] = useState(false)
+    
+    return <li onMouseEnter={e => setShow(true)} onMouseLeave={e =>setShow(false)}>
+        <Link href='/' >{name}</Link>
+        {show && <DropDownMenu />}
+        
     </li>
 }
 
