@@ -1,24 +1,35 @@
 import styled from "styled-components";
 
 export const MainFooterStyling = styled.footer`
-    height: 20vh;
+    height: 30vh;
     width: 100%;
     background-color: #A5DA15;
     position: relative;
+    display: flex;
 
-    .copyright{
-        top: 78%;
-        left: 12%;
-        /* transform: translate(-16%, -80%); */
-        position: absolute;
-    }
     .line{
         position: absolute;
-        width: 240px;
+        width: 900px;
         height: 2px;
         background-color: #fff;
         top: 70%;
         left: 10%;
     }
+    .copyright{
+        position: absolute;
+        left: 6%;
+        top: 90%;
+        transform: translateY(-90%);
+    }
 
+    .creator{
+        position: absolute;
+        left: 69.5%;
+        top: 90%;
+        transform: translateY(-90%);
+    }
+
+    span{
+        font-weight: 700;
+    }
 `

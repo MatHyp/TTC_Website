@@ -9,7 +9,7 @@ export const FooterStyling = styled.footer`
         position: relative;
         top: 50%;
         transform: translateY(-50%);
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
@@ -17,6 +17,6 @@ export const FooterStyling = styled.footer`
     }
     img{
         /* height: 70%; */
-        width: calc(70% / 6);
+        width: calc(90% / 6);
     }
 `

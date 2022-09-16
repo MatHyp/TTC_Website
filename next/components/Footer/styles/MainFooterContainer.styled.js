@@ -1,32 +1,38 @@
 import styled from "styled-components";
 
 export const MainFooterContainerStyling = styled.div`
+     /* display: flex;
+     height: 20%;
+     margin: 0 auto;
+     transform: translateY(40%);
+     img{
+         height: 0px;
+         width: 75%;    
+    } */
     display: flex;
-    /* align-items: center; */
-    width: 75%;    
-    margin: 0 auto;
-    transform: translateY(40%);
-    .bip{
-        height: 100px;
-        margin-left: 30%;
-        height: 60px;
-        
-    }
+    height: 33%;
+    margin: 40px 0 0 6%;
     .title{
+        padding-left: 40px;
         font-family: 'Rajdhani';
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
         text-transform: uppercase;
         color: white;
     }
     .details{
+        padding-left: 40px;
         font-family: 'Mulish';
-        font-weight: 400;
+        font-weight: 700;
         color: white;
-        font-size: 20px;
+        font-size: 15px;
     }
-    div{
-        margin-left: 50px;
+ 
+    .bip{
+        position: absolute;
+        width: 140px;
+        left: 70%;
     }
+
 
 `
