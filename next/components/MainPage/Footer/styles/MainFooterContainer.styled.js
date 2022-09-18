@@ -1,17 +1,10 @@
 import styled from "styled-components";
 
 export const MainFooterContainerStyling = styled.div`
-     /* display: flex;
-     height: 20%;
-     margin: 0 auto;
-     transform: translateY(40%);
-     img{
-         height: 0px;
-         width: 75%;    
-    } */
     display: flex;
     height: 33%;
     margin: 40px 0 0 6%;
+    
     .title{
         padding-left: 40px;
         font-family: 'Rajdhani';

@@ -16,7 +16,9 @@ const DropDownMenu = () => {
                 <li>
                     <Link href="/">Zgoda zakładu pracy na odbycie praktyki</Link>
                 </li>
-
+                <li>
+                    <Link href="/">Zgoda zakładu pracy na odbycie praktyki</Link>
+                </li>
             </ul>
         </DropDownMenuStyling>
     )

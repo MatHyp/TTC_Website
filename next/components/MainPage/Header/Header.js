@@ -2,16 +2,16 @@ import { useEffect, useState } from "react"
 import { HeaderStyles } from "./styles/Header.styled"
 
 const Header = () => {
-    const [img_one , setImg_one] = useState(-200)
-    const [img_two , setImg_two] = useState(-100)
-    const [img_three , setImg_three] = useState(0)
+    const [img_one, setImg_one] = useState(-200)
+    const [img_two, setImg_two] = useState(-100)
+    const [img_three, setImg_three] = useState(0)
 
     const [counter, setCounter] = useState(0)
     const [way, setWay] = useState(1)
 
-    const changeSlider = () =>{
+    const changeSlider = () => {
 
-        if(way === 1){
+        if (way === 1) {
             setImg_one(img_one + 100)
             setImg_two(img_two + 100)
             setImg_three(img_three + 100)
@@ -19,14 +19,14 @@ const Header = () => {
             // console.log(img_three);
             // console.log('przód');
         }
-        else if(way === 0){
+        else if (way === 0) {
             setImg_one(img_one - 100)
             setImg_two(img_two - 100)
             setImg_three(img_three - 100)
             // console.log(img_one);
             // console.log(img_three);
             // console.log('tył');
-            
+
         }
     }
 
@@ -43,7 +43,7 @@ const Header = () => {
     //     setTimeout(() =>{
     //         changeSlider();
     //     }, 2000)
-        
+
     // },[img_one])
 
     return (
@@ -51,8 +51,8 @@ const Header = () => {
             {/* <img src="images/test.png" style={{transform: `translateX(${img_one}%)`}}/> */}
             {/* <img src="images/main.png" style={{transform: `translateX(${img_two}%)`}}/> */}
             {/* <img src="images/news1.png" style={{transform: `translateX(${img_three}%)`}}/> */}
-  
-            <img src="images/test.png" />
+
+            {/* <img src="images/test.png" /> */}
 
             <div className="header-description">
                 <p>pasja</p>

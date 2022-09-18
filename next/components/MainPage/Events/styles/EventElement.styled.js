@@ -20,7 +20,7 @@ export const EventElementStyling = styled.div`
         padding-bottom: 20px;
     }
     
-    img{
+    .img{
         padding-bottom: 20px;
         width: 100%;
         object-fit: contain;
