@@ -1,13 +1,5 @@
-import { useEffect, useState } from "react"
 import { HeaderStyles } from "./styles/Header.styled"
-import styled from "styled-components";
-
 import Image from "next/image"
-
-// const ImageContainer = styled.div`
-//     width: 100vw;
-//     height: 20vh;
-// `
 
 const Header = () => {
     return (

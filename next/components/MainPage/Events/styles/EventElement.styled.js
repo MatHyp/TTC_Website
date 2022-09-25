@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const EventElementStyling = styled.div`
     width: 30%;
     margin-bottom: 50px;
+    position: relative;
     .data{
         font-family: 'Mullish';
         font-size: 14px;
@@ -17,7 +18,7 @@ export const EventElementStyling = styled.div`
         color: #FFFFFF;
         font-weight: 900;
         padding-top: 40px;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
     
     .img{
@@ -31,8 +32,16 @@ export const EventElementStyling = styled.div`
         font-size: 20px;
         color: #c8c8c8;
         font-weight: 100;
+        margin-bottom: 50px;
     }
 
+    .border-bottom{
+        position: absolute;
+        width: 100%;
+        height: 0.1px;
+        bottom: 0;
+        background-color: grey;
+    }
     .read-more{
         font-family: 'Mullish';
         font-size: 20px;

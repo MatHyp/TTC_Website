@@ -3,12 +3,13 @@ import { NavMainBarStyled } from './styles/NavMainBar.styled'
 
 import NavigationList from './NavigationList'
 
-const Navigation = () => {
+const Navigation = ({ navData }) => {
+
     return <div >
         <NavTopBarStyles />
 
         <NavMainBarStyled>
-            <NavigationList />
+            <NavigationList navData={navData} />
         </NavMainBarStyled>
     </div>
 }

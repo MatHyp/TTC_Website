@@ -17,9 +17,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="https://use.typekit.net/ihh2vbs.css"></link>
         <link rel="stylesheet" href="https://use.typekit.net/ihh2vbs.css"></link>
       </Head>
-
       <GlobalStyles />
-      <Navigation />
       <Component {...pageProps} />
       <Footer />
       <MainFooter />
@@ -28,3 +26,5 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp
+
+

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const EventElement = ({ post, id }) => {
-
+    console.log(post);
     return (
         <EventElementStyling>
             <div>
@@ -17,7 +17,7 @@ const EventElement = ({ post, id }) => {
             <p className="event-title">{post.title}</p>
             <p className="description">
                 {post.description.slice(0, 200)}
-                <Link href={`article/${id}`}>
+                <Link href={`article/${post.slug}`}>
                     <span className="read-more">czytaj wiecej</span>
                 </Link>
             </p>

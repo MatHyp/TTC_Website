@@ -22,12 +22,6 @@ export const EventsStyling = styled.div`
 
     }
 
-    .border-bottom{
-        width: 100%;
-        height: 0.1px;
-        margin-top: 30px;
-        background-color: grey;
-    }
 
     .partners{
         width: 40%;

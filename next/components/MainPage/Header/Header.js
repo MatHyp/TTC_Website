@@ -52,7 +52,7 @@ const Header = () => {
             {/* <img src="images/main.png" style={{transform: `translateX(${img_two}%)`}}/> */}
             {/* <img src="images/news1.png" style={{transform: `translateX(${img_three}%)`}}/> */}
 
-            {/* <img src="images/test.png" /> */}
+            <img src="images/test.png" />
 
             <div className="header-description">
                 <p>pasja</p>
