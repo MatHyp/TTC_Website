@@ -6,10 +6,9 @@ import Header from "../../components/SubPages/SubHeader/Header";
 import SubPageContent from "../../components/SubPages/OtherSubpages/SubPageContent";
 function SubPage({ navRes, navRess }) {
 
-    console.log(navRes);
     return (
         <>
-            <Navigation navData={navRes.data} />
+            <Navigation navData={navRess.data} />
             <Header />
             <SubPageContent data={navRes} />
         </>

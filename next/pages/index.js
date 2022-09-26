@@ -8,12 +8,6 @@ import axios from 'axios';
 
 export default function Home({ articles, navRes }) {
 
-  // navRes.data.map(e => {
-  //   console.log(e.attributes.nazwaStrefy);
-  //   e.attributes.nawigacjas.data.map(e => {
-  //     console.log(e.attributes);
-  //   })
-  // })
 
   return (
     <div>

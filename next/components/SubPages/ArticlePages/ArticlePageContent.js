@@ -15,7 +15,7 @@ const ArticlePageContent = ({ data }) => {
                 </div>
                 <Image src='/images/news1.png' width={700} height={300} objectFit='contain' />
             </ArticlePageContentStyling>
-            <article dangerouslySetInnerHTML={{ __html: data.description }} />
+            <article className='description' dangerouslySetInnerHTML={{ __html: data.description }} />
             {/* <ReactMarkdown className='description'>{data.description}</ReactMarkdown> */}
         </ArticlePageContainer >
     )

@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import Navigation from "../../components/MainPage/navigation/Navigation";
+import KadraContainer from "../../components/SubPages/KadraSubpage/KadraContainer";
 import Header from "../../components/SubPages/SubHeader/Header";
 
 function KadraPage({ navRes }) {
@@ -8,6 +9,7 @@ function KadraPage({ navRes }) {
         <>
             <Navigation navData={navRes.data} />
             <Header />
+            <KadraContainer />
         </>
     )
 }

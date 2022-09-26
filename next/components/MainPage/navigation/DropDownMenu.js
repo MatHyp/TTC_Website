@@ -5,11 +5,13 @@ const DropDownMenu = ({ link }) => {
     return (
         <DropDownMenuStyling opacity={0}>
             <ul>
+                <li key={100}>
+                    <Link href={`/subpage/kadra`}>Kadra</Link>
+                </li>
                 {link.map(e => {
-                    console.log(e);
-                    console.log(e);
+
                     return (
-                        <li>
+                        <li key={e.id}>
                             <Link href={`/subpage/${e.attributes.slug}`}>{e.attributes.nazwa}</Link>
                         </li>
                     )

@@ -7,8 +7,7 @@ export const NavListUlStyles = styled.ul`
     justify-content: space-around;
     margin-left: 34%;
     width: 60%;
-    
-    
+     
     li{
         position: relative;
         list-style: none;

@@ -5,8 +5,6 @@ export const DropDownMenuStyling = styled.div`
     left: 0px;    
     z-index: 10;
    
-
-    
     ul{
         background-color: #a5da15;     
         display: flex;

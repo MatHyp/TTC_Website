@@ -5,10 +5,7 @@ import Header from "../../components/SubPages/SubHeader/Header";
 import Navigation from "../../components/MainPage/navigation/Navigation";
 import ArticlePageContent from "../../components/SubPages/ArticlePages/ArticlePageContent";
 function ArticlePage({ navRes, post }) {
-    const md = new MarkdownIt();
-    const htmlContent = md.render(post.attributes.description);
 
-    console.log(post.attributes);
     return (
         <>
             <Navigation navData={navRes.data} />

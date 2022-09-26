@@ -4,7 +4,7 @@ import Image from 'next/image'
 const MainAbout = () => {
     return (
         <MainAboutStyles>
-            <Image src='/images/TTC.png' width='700px' height='300px' objectFit='contain' />
+            <Image src='/images/TTC.png' width='700px' height='300px' objectFit='contain' alt='Zdjecie przedstawiające budynek TTC' />
             <AboutDescription />
         </MainAboutStyles>
     )
