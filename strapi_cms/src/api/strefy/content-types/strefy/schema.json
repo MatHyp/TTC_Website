@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "strefies",
+  "info": {
+    "singularName": "strefy",
+    "pluralName": "strefies",
+    "displayName": "strefy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nazwaStrefy": {
+      "type": "string"
+    },
+    "nawigacjas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::nawigacja.nawigacja",
+      "mappedBy": "strefies"
+    }
+  }
+}
