@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { HeaderStyles } from "./styles/Header.styled"
-
+import Image from "next/image"
 const Header = () => {
     const [img_one, setImg_one] = useState(-200)
     const [img_two, setImg_two] = useState(-100)
@@ -52,8 +52,9 @@ const Header = () => {
             {/* <img src="images/main.png" style={{transform: `translateX(${img_two}%)`}}/> */}
             {/* <img src="images/news1.png" style={{transform: `translateX(${img_three}%)`}}/> */}
 
-            {/* <img src="images/test.png" /> */}
-
+            <div>
+                <Image src={"/images/test.png"} layout='fill' />
+            </div>
             <div className="header-description">
                 <p>pasja</p>
                 <span className="green">

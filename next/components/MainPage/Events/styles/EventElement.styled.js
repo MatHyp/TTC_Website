@@ -19,6 +19,7 @@ export const EventElementStyling = styled.div`
         font-weight: 900;
         padding-top: 40px;
         margin-bottom: 20px;
+        height: 160px;
     }
     
     .img{
@@ -28,13 +29,20 @@ export const EventElementStyling = styled.div`
         border-radius: 10px;
     }
     .description{
-        font-family: 'Mullish';
-        font-size: 20px;
+        font-family: 'rajdhani' ;
+        font-size: 20px ;
         color: #c8c8c8;
         font-weight: 100;
         margin-bottom: 50px;
     }
-
+    .text *{
+        font-family: 'Poppins' !important;
+        font-weight: 400 !important;
+        font-size: 22px !important;
+        color: #c8c8c8  !important;
+        height: 130px;
+        background-color: transparent !important;
+    }
     .border-bottom{
         position: absolute;
         width: 100%;

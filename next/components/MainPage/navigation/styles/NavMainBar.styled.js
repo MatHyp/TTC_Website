@@ -9,18 +9,18 @@ export const NavMainBarStyled = styled.nav`
     /* background-color: #323232; */
     position: relative;
     
-    img{
+    .img{
         position: absolute;
         transform: translateY(-50%);
         top: 50%;
-
+        width: '140px'; height: '50px'
     }
-    img:nth-child(1){
+    .img:nth-child(1){
         height: 50%;
         left: 10%;
     }
 
-    img:nth-child(2){
+    .img:nth-child(2){
         display: none;
         right: 10%;
         height: 50%;
@@ -28,16 +28,16 @@ export const NavMainBarStyled = styled.nav`
 
     @media (max-width: 1150px) {
 
-        img:nth-child(2){
+        .img:nth-child(2){
             display: block;
         }
     }
 
     @media (max-width: 500px) {
-        img:nth-child(1){
+        .img:nth-child(1){
             height: 35%;
         }
-        img:nth-child(2){
+        .img:nth-child(2){
             display: block;
             height: 35%;
             

@@ -3,6 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 const EventElement = ({ post, id }) => {
+    let content = post.description.replace(/<img[^>]*>/g, "")
+    // console.log(post);
+    let test = content.trim()
     console.log(post);
     return (
         <EventElementStyling>
@@ -15,8 +18,10 @@ const EventElement = ({ post, id }) => {
 
             <p className="data">15 CZERWCA 2022</p>
             <p className="event-title">{post.title}</p>
-            <p className="description">
-                {post.description.slice(0, 200)}
+            <p className="description" >
+                {
+                    <article className="text" dangerouslySetInnerHTML={{ __html: test.split(' ').slice(0, 10).join(' ') }} />
+                }
                 <Link href={`article/${post.slug}`}>
                     <span className="read-more">czytaj wiecej</span>
                 </Link>

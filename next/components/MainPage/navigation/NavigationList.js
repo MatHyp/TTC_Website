@@ -11,9 +11,10 @@ const NavigationList = ({ navData }) => {
     return (
         <>
             <Link href='/'>
-                <Image src='/images/logo_ttc.png' alt='Logo technikum technologii cyfrowych' width={100} height={40} />
+                <div style={{ width: '140px', height: '50px' }} className='img'>
+                    <Image src={"/images/logo_ttc.png"} layout='fill' />
+                </div>
             </Link>
-            {/* <img src='/images/nav-open.png' onClick={(e) => setOpen(!open)} /> */}
             <NavListUlStyles open={open}>
                 {navData.map(e => {
                     return <NavItemLi name={e.attributes.nazwaStrefy} links={e.attributes.nawigacjas.data} key={e.id} />
