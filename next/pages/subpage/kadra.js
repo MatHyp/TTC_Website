@@ -18,7 +18,7 @@ export default KadraPage;
 
 export async function getStaticProps() {
 
-    const navRes = await axios.get('http://localhost:1337/api/strefies?fields=nazwaStrefy&populate=nawigacjas');
+    const navRes = await axios.get('http://s2.ttc.ovh:81/api/strefies?fields=nazwaStrefy&populate=nawigacjas');
 
     return {
         props: {

@@ -18,8 +18,8 @@ function SubPage({ navRes, navRess }) {
 export default SubPage;
 
 export async function getStaticProps({ params }) {
-    const navRes = await axios.get(`http://localhost:1337/api/nawigacjas/${params.slug}?populate=media`)
-    const navRess = await axios.get('http://localhost:1337/api/strefies?fields=nazwaStrefy&populate=nawigacjas');
+    const navRes = await axios.get(`http://s2.ttc.ovh:81/api/nawigacjas/${params.slug}?populate=media`)
+    const navRess = await axios.get('http://s2.ttc.ovh:81/api/strefies?fields=nazwaStrefy&populate=nawigacjas');
 
     return {
         props: {
@@ -30,7 +30,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const get = await fetch('http://localhost:1337/api/nawigacjas')
+    const get = await fetch('http://s2.ttc.ovh:81/api/nawigacjas')
     const data = await get.json()
 
     const paths = data.data.map(post => {

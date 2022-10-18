@@ -9,7 +9,7 @@ const NavItemLi = ({ name, links }) => {
 
     return <li onMouseEnter={e => setShow(true)} onMouseLeave={e => setShow(false)}>
         <Link href='/' >{name}</Link>
-        {show && <DropDownMenu link={links} />}
+        {show && <DropDownMenu link={links} name={name} />}
 
     </li>
 }

@@ -3,9 +3,9 @@ import EventElement from "./EventElement"
 import { EventsStyling } from "./styles/Events.styled"
 import { useEffect, useState } from "react"
 const EventList = ({ events }) => {
+
     const [latestPosts, setLatestPosts] = useState([]);
     useEffect(() => {
-        console.log(events.length);
         setLatestPosts(events.slice(events.length - 6, events.length).reverse());
     }, [events])
 

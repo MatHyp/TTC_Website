@@ -25,7 +25,8 @@ export const EventElementStyling = styled.div`
     .img{
         padding-bottom: 20px;
         width: 100%;
-        object-fit: contain;
+        height: 300px;
+        /* object-fit: contain; */
         border-radius: 10px;
     }
     .description{

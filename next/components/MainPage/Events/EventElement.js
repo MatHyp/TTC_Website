@@ -3,29 +3,26 @@ import Link from "next/link";
 import Image from "next/image";
 
 const EventElement = ({ post, id }) => {
-    let content = post.description.replace(/<img[^>]*>/g, "")
-    // console.log(post);
-    let test = content.trim()
-    console.log(post);
+    let content = post.description.replace(/<img[^>]*>/g, "").trim()
+
+    console.log(post.img.data.attributes.url);
+
     return (
         <EventElementStyling>
             <div>
-                <Image src='/images/news1.png' width='800px'
-                    height='500px'
-                    objectFit='contain'
-                    alt='Brand logo' />
+                <img src={`http://s2.ttc.ovh:81${post.img.data.attributes.url}`} className='img' />
             </div>
 
             <p className="data">15 CZERWCA 2022</p>
             <p className="event-title">{post.title}</p>
-            <p className="description" >
+            <div className="description" >
                 {
-                    <article className="text" dangerouslySetInnerHTML={{ __html: test.split(' ').slice(0, 10).join(' ') }} />
+                    <article className="text" dangerouslySetInnerHTML={{ __html: content.split(' ').slice(0, 10).join(' ') }} />
                 }
                 <Link href={`article/${post.slug}`}>
                     <span className="read-more">czytaj wiecej</span>
                 </Link>
-            </p>
+            </div>
             <div className="border-bottom"></div>
         </EventElementStyling>
     )

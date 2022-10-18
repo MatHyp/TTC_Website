@@ -7,7 +7,6 @@ import EventsList from '../components/MainPage/Events/EventsList'
 import axios from 'axios';
 
 export default function Home({ articles, navRes }) {
-  console.log(articles);
 
   return (
     <div>
@@ -21,8 +20,8 @@ export default function Home({ articles, navRes }) {
 }
 
 export async function getStaticProps() {
-  const postsRes = await axios.get('http://localhost:1337/api/articles?populate=image');
-  const navRes = await axios.get('http://localhost:1337/api/strefies?fields=nazwaStrefy&populate=nawigacjas');
+  const postsRes = await axios.get('http://s2.ttc.ovh:81/api/articles?populate=img');
+  const navRes = await axios.get('http://s2.ttc.ovh:81/api/strefies?fields=nazwaStrefy&populate=nawigacjas');
 
   return {
     props: {

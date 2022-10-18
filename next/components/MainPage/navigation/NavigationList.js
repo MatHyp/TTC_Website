@@ -17,6 +17,7 @@ const NavigationList = ({ navData }) => {
             </Link>
             <NavListUlStyles open={open}>
                 {navData.map(e => {
+
                     return <NavItemLi name={e.attributes.nazwaStrefy} links={e.attributes.nawigacjas.data} key={e.id} />
                 })}
             </NavListUlStyles>
