@@ -4,13 +4,12 @@ import Image from "next/image";
 
 const EventElement = ({ post, id }) => {
     let content = post.description.replace(/<img[^>]*>/g, "").trim()
-
     console.log(post.img.data.attributes.url);
 
     return (
         <EventElementStyling>
             <div>
-                <img src={`http://s2.ttc.ovh:81${post.img.data.attributes.url}`} className='img' />
+                <Image src={`http://s2.ttc.ovh:81${post.img.data.attributes.url}`} className='img' width={450} height={250} objectFit='contain' alt="zdjecie" />
             </div>
 
             <p className="data">15 CZERWCA 2022</p>

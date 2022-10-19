@@ -12,7 +12,7 @@ const NavigationList = ({ navData }) => {
         <>
             <Link href='/'>
                 <div style={{ width: '140px', height: '50px' }} className='img'>
-                    <Image src={"/images/logo_ttc.png"} layout='fill' />
+                    <Image src={"/images/logo_ttc.png"} layout='fill' alt='logo technikum technologi cyfrowych' />
                 </div>
             </Link>
             <NavListUlStyles open={open}>
