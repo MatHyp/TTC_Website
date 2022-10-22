@@ -8,9 +8,11 @@ const DropDownMenu = ({ link }) => {
 
                 {link.map(e => {
                     return (
-                        <Link href={`/subpage/${e.attributes.slug}`}><li key={e.id}>
-                            <Link href={`/subpage/${e.attributes.slug}`}>{e.attributes.nazwa}</Link>
-                        </li></Link>
+                        <Link href={`/subpage/${e.attributes.slug}`} key={e.id}>
+                            <li key={e.id}>
+                                <Link href={`/subpage/${e.attributes.slug}`}>{e.attributes.nazwa}</Link>
+                            </li>
+                        </Link>
                     )
                 })}
             </ul>
