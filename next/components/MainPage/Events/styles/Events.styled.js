@@ -11,8 +11,8 @@ export const EventsStyling = styled.div`
         font-family: 'rajdhani', sans-serif;
         position: absolute;
         left: 12%;
-        top: 8%;
-        font-size: 60px;
+        top: 5%;
+        font-size: 80px;
         color: #c8c8c8;
     }
     

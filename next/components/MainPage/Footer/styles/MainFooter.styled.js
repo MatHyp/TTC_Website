@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainFooterStyling = styled.footer`
-    height: 30vh;
+    height: 20vh;
     width: 100%;
     background-color: #A5DA15;
     position: relative;
@@ -17,7 +17,7 @@ export const MainFooterStyling = styled.footer`
     }
     .copyright{
         position: absolute;
-        left: 6%;
+        left: 8%;
         top: 90%;
         transform: translateY(-90%);
     }
@@ -31,5 +31,44 @@ export const MainFooterStyling = styled.footer`
 
     span{
         font-weight: 700;
+    }
+
+    @media (max-width: 1050px){
+        height: 25vh;
+        .copyright{
+        position: absolute;
+        left: 8%;
+        top: 82%;
+        transform: translateY(-90%);
+        }
+    
+
+    .creator{
+        position: absolute;
+        left: 8%;
+        top: 92%;
+    }
+
+}
+    @media (max-width: 900px){
+        height: 30vh;
+        .copyright{
+            width: 60%;
+        }
+    }
+
+    @media (max-width: 721px){
+        height: 52vh;
+        .copyright{
+            font-size:13px;
+            width: 80%;
+        }
+        .creator{
+            font-size: 13px;
+        }
+    }
+
+    @media (max-height: 670px){
+        height: 70vh;
     }
 `
