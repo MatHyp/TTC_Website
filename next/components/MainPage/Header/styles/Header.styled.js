@@ -5,7 +5,7 @@ export const HeaderStyles = styled.header`
     height: 60vh;
     position: relative;
 
-
+    margin-top: 15vh;
     img{
         z-index: -1;
         object-fit: cover;

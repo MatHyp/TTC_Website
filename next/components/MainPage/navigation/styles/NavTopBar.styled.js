@@ -5,5 +5,4 @@ export const NavTopBarStyles = styled.div`
     max-width: 100%;
     height: 38px;
     background-color: #a5da15;
-    /* position: fixed; */
 `
