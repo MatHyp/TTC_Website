@@ -15,6 +15,11 @@ export const DropDownMenuStyling = styled.div`
         border-bottom-right-radius: 6px;
         border-top-right-radius: 6px;
         background-color:#323232;
+        max-height: 400px;
+        overflow: scroll;
+        ::-webkit-scrollbar {
+            display: none;
+        }
     }
     
     
