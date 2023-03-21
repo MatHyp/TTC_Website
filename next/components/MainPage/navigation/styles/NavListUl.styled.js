@@ -7,15 +7,21 @@ export const NavListUlStyles = styled.ul`
     justify-content: space-around;
     margin-left: 34%;
     width: 60%;
+    z-index: 10;
      
     li{
         position: relative;
         list-style: none;
-        /* background-color: #a5da15;      */
         padding: 10px;
-        transition: 0.3s ease;
     }
-    
+    .li:hover{
+        background-color: #323232;     
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        a{
+            color: white;
+        }
+    }
     a{
         font-family: 'Mulish', sans-serif;
         color: black;
@@ -42,7 +48,7 @@ export const NavListUlStyles = styled.ul`
         width:100vw;
         text-align: center;
         background-color: grey;
-        overflow: scroll;
+        z-index: 10;
         left: ${(props) => props.open ? '0' : '-130%'};
         margin: 0 auto;
         

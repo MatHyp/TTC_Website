@@ -6,7 +6,8 @@ export const MainFooterContainerStyling = styled.div`
     margin: 40px 0 0 6%;
     
     .title{
-        padding-left: 40px;
+        padding-left: 20px;
+        
         font-family: 'Rajdhani';
         font-size: 20px;
         font-weight: bold;
@@ -14,18 +15,48 @@ export const MainFooterContainerStyling = styled.div`
         color: white;
     }
     .details{
-        padding-left: 40px;
+        padding-left: 20px;
         font-family: 'Mulish';
         font-weight: 700;
         color: white;
-        font-size: 15px;
+        font-size: 16px;
     }
  
     .bip{
         position: absolute;
-        width: 140px;
-        left: 70%;
+        left: 74%;
+    }
+    .logo{
+        width: 280px;
+    }
+ 
+
+    @media (max-width: 900px){
+        .bip{
+        
+            left: 66%;
+            top: 66%;
+            width: 200px;
+        }
+
     }
 
-
+    @media (max-width: 670px){
+        flex-direction: column;
+        .logo{
+            width: 80vw;
+        }
+        .bip{
+            width: 120px;
+            left: 6%;
+            top: 54%;
+        }
+        .details{
+            font-size: 13px;
+        }
+        .title{
+            padding-top: 15px;
+            font-size:18px;
+        }
+    }
 `

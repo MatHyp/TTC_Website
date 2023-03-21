@@ -1,17 +1,17 @@
 import { NavTopBarStyles } from './styles/NavTopBar.styled'
 import { NavMainBarStyled } from './styles/NavMainBar.styled'
-
+import { NavWrapperStyles } from './styles/NavWrapper.styled'
 import NavigationList from './NavigationList'
 
 const Navigation = ({ navData }) => {
 
-    return <div >
+    return <NavWrapperStyles >
         <NavTopBarStyles />
 
         <NavMainBarStyled>
             <NavigationList navData={navData} />
         </NavMainBarStyled>
-    </div>
+    </NavWrapperStyles>
 }
 
 export default Navigation;

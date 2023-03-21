@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderStyles = styled.header`
     @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap');
     position: relative;
-
+    margin-top: 14vh;
 
     .category{
         position: absolute;

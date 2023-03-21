@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <HeaderStyles>
             <Image src="/images/sub.png" width={1920} height={300} />
-            <p className="category">Aktualności</p>
+            <p className="category">Aktualnosci</p>
         </HeaderStyles>
     )
 }
